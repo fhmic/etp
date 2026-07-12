@@ -20,7 +20,7 @@ export function LoginPage() {
   }
 
   return (
-    <AuthLayout title="Sign in to ETPA" subtitle="Unified treasury, portfolio, liquidity and ECL Analytics.">
+    <AuthLayout title="Sign in to ETPA" subtitle="Treasury, portfolio, Debt, Equity, liquidity and ECL Analytics.">
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
         {error && <div className="alert danger">{error}</div>}
         <label>Email<input {...register('email', { required: true })} type="email" /></label>
