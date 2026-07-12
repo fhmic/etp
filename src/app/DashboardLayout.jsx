@@ -49,7 +49,7 @@ export function DashboardLayout() {
           <div className="brand-mark">ETPA</div>
           <div>
             <strong>ELITES</strong>
-            <span>Treasury & Portfolio</span>
+            <span>Treasury & Portfolio Analytics</span>
           </div>
         </div>
         <nav>
@@ -65,7 +65,7 @@ export function DashboardLayout() {
         <header className="topbar">
           <div>
             <p>{organisation?.name || 'Organisation'}</p>
-            <h1>ELITES Treasury & Portfolio Dashboard</h1>
+            <h1>ELITES Treasury & Portfolio Analytics</h1>
           </div>
           <div className="top-actions">
             <button className="icon-button" onClick={toggleTheme} aria-label="Toggle theme">
