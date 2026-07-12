@@ -22,7 +22,7 @@ export function AuthLayout({ title, subtitle, children }) {
       <section className="auth-visual">
         <div className="terminal-panel">
           <span>LIQUIDITY MONITOR</span>
-          <strong>FInancial Health</strong>
+          <strong>Financial Health</strong>
           <em>Net liquidity position</em>
         </div>
         <div className="ticker-row">
