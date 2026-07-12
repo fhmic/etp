@@ -32,8 +32,7 @@ export function AuthLayout({ title, subtitle, children }) {
           <span>WACD</span>
           <span>NIS</span>
           <span>EVA</span>
-          <span>Other Financial Metrics</span>
-        </div>
+          </div>
       </section>
     </div>
   );
