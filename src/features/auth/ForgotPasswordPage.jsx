@@ -13,7 +13,7 @@ export function ForgotPasswordPage() {
   }
 
   return (
-    <AuthLayout title="Reset password" subtitle="Request a password reset link for your ETPD account.">
+    <AuthLayout title="Reset password" subtitle="Request a password reset link for your ETPA account.">
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
         {message && <div className="alert">{message}</div>}
         <label>Email<input {...register('email', { required: true })} type="email" /></label>
