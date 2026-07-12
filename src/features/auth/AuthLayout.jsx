@@ -26,7 +26,7 @@ export function AuthLayout({ title, subtitle, children }) {
           <em>Net liquidity position</em>
         </div>
         <div className="ticker-row">
-          <span>ECL Computation</span>
+          <span>ECL</span>
           <span>WACC</span>
           <span>WARA</span>
           <span>WACD</span>
