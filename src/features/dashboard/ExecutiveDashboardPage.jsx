@@ -82,7 +82,7 @@ export function ExecutiveDashboardPage() {
 
       {maturity && (
         <article className="panel">
-          <h3>Asset & Liability Maturity Profile - Cumulative Tenor Gap</h3>
+          <h3>Asset & Liability Maturity Profile (\u20a6) - Cumulative Tenor Gap</h3>
           <div className="table-wrap">
             <table className="maturity-table">
               <thead>

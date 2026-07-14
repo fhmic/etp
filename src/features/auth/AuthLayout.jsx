@@ -5,10 +5,10 @@ export function AuthLayout({ title, subtitle, children }) {
     <div className="auth-screen">
       <section className="auth-panel">
         <div className="brand auth-brand">
-          <div className="brand-mark">ETPA</div>
+          <div className="brand-mark">ETPD</div>
           <div>
             <strong>ELITES</strong>
-            <span>Treasury & Portfolio Analytics</span>
+            <span>Treasury & Portfolio</span>
           </div>
         </div>
         <h1>{title}</h1>
@@ -22,17 +22,14 @@ export function AuthLayout({ title, subtitle, children }) {
       <section className="auth-visual">
         <div className="terminal-panel">
           <span>LIQUIDITY MONITOR</span>
-          <strong>Financial Health</strong>
-          <em>Net liquidity position</em>
+          <strong>₦24.8B</strong>
+          <em>Net liquidity position +8.4%</em>
         </div>
         <div className="ticker-row">
-          <span>ECL</span>
-          <span>WACC</span>
-          <span>WARA</span>
-          <span>WACD</span>
-          <span>NIS</span>
-          <span>EVA</span>
-          </div>
+          <span>Loan Book ₦81.2B</span>
+          <span>ECL ₦1.7B</span>
+          <span>WACD 19.25%</span>
+        </div>
       </section>
     </div>
   );

@@ -52,8 +52,12 @@ export function DataModulePage({ module }) {
   async function deleteSelected() {
     if (!selected.length) return;
     if (!window.confirm(`Delete ${selected.length} selected record(s)? This cannot be undone.`)) return;
-    await api.delete(`${config.endpoint}/bulk`, { data: { ids: selected } });
-    load();
+    try {
+      await api.post(`${config.endpoint}/bulk-delete`, { ids: selected });
+      load();
+    } catch (err) {
+      window.alert(err.response?.data?.message || 'Failed to delete selected records.');
+    }
   }
 
   return (

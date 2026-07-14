@@ -29,8 +29,12 @@ export function DebtorsPage() {
   async function deleteSelected() {
     if (!selected.length) return;
     if (!window.confirm(`Delete ${selected.length} selected ${terms.debtor.toLowerCase()}(s)? This cannot be undone.`)) return;
-    await api.delete('/debtors/bulk', { data: { ids: selected } });
-    load();
+    try {
+      await api.post('/debtors/bulk-delete', { ids: selected });
+      load();
+    } catch (err) {
+      window.alert(err.response?.data?.message || 'Failed to delete selected records.');
+    }
   }
   function toggleAll() {
     setSelected(selected.length === debtors.length ? [] : debtors.map(d => d._id));
